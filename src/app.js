@@ -57,6 +57,9 @@ app.get("/BloodCamp", (req, res) => {
 app.get("/Contact", (req, res) => {
   res.render("Contact");
 });
+app.get("/BloodAvail", (req, res) => {
+  res.render("BloodAvail");
+});
 
 // create a new user data for doner registation
 app.post("/donerRegister", async (req, res) => {
