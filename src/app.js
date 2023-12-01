@@ -1,6 +1,4 @@
-// const express = require("express");
-// const path = require("path");
-// const app = express();
+
 
 require("./Db/conn");
 const donerRegister = require("./Model/donerReg");
