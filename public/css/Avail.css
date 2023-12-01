@@ -5,31 +5,516 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .dist {
-  width: 150px;
-  height: 60px;
+  width: 120px;
+  height: 30px;
   border: 2px solid green;
   border-radius: 8px;
   text-align: center;
 }
-
-.contaner {
-  width: 100vw;
-  /* height: 100vh; */
-  border: 1px solid black;
+.unit {
   display: flex;
-  margin-top: 80px;
+  flex-direction: row;
+}
+.unitr {
+  width: 50%;
+  background-color: rgb(170, 113, 113);
+  text-align: center;
+  color: white;
+}
+.unitl {
+  width: 50%;
+  background-color: rgb(170, 113, 113);
+  text-align: center;
+  color: white;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+.para {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+/* // for Angul */
+.contanerAngul {
+  width: 100vw;
+  display: flex;
+  margin-top: 25px;
   opacity: 0;
 }
-.contaner::before {
+.contanerAngul::before {
   opacity: 0;
 }
-.contaner.cont {
+.contanerAngul.Ang {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(0%, 3%) scale(1);
+  pointer-events: auto;
+  background-color: black;
+}
+/* for Balangire */
+.contanerBalangire {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerBalangire::before {
+  opacity: 0;
+}
+.contanerBalangire.Bal {
+  opacity: 1;
+  transform: translate(0%, -99%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Balasore */
+.contanerBalasore {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerBalasore::before {
+  opacity: 0;
+}
+.contanerBalasore.Bala {
+  opacity: 1;
+  transform: translate(0%, -208%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Bargarh */
+.contanerBargarh {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerBargarh::before {
+  opacity: 0;
+}
+.contanerBargarh.Bar {
+  opacity: 1;
+  transform: translate(0%, -312%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Bhadrak */
+.contanerBhadrak {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerBhadrak::before {
+  opacity: 0;
+}
+.contanerBhadrak.Bha {
+  opacity: 1;
+  transform: translate(0%, -416%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Boudh */
+.contanerBoudh {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerBoudh::before {
+  opacity: 0;
+}
+.contanerBoudh.Bou {
+  opacity: 1;
+  transform: translate(0%, -520%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Cuttack */
+.contanerCuttack {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerCuttack::before {
+  opacity: 0;
+}
+.contanerCuttack.Cut {
+  opacity: 1;
+  transform: translate(0%, -624%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Deogarh */
+.contanerDeogarh {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerDeogarh::before {
+  opacity: 0;
+}
+.contanerDeogarh.Deo {
+  opacity: 1;
+  transform: translate(0%, -728%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Dhenkanal */
+.contanerDhenkanal {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerDhenkanal::before {
+  opacity: 0;
+}
+.contanerDhenkanal.Dhe {
+  opacity: 1;
+  transform: translate(0%, -832%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Ganjam */
+.contanerGanjam {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerGanjam::before {
+  opacity: 0;
+}
+.contanerGanjam.Gan {
+  opacity: 1;
+  transform: translate(0%, -936%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Gajapati */
+.contanerGajapati {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerGajapati::before {
+  opacity: 0;
+}
+.contanerGajapati.Gaj {
+  opacity: 1;
+  transform: translate(0%, -1040%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Jharsugudae */
+.contanerJharsugudae {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerJharsugudae::before {
+  opacity: 0;
+}
+.contanerJharsugudae.Jha {
+  opacity: 1;
+  transform: translate(0%, -1144%) scale(1);
+  pointer-events: auto;
+}
+/* for Jajpur */
+.contanerJajpur {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerJajpur::before {
+  opacity: 0;
+}
+.contanerJajpur.Jaj {
+  opacity: 1;
+  transform: translate(0%, -1248%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Jagatsinghapur */
+.contanerJagatsinghapur {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerJagatsinghapur::before {
+  opacity: 0;
+}
+.contanerJagatsinghapur.Jag {
+  opacity: 1;
+  transform: translate(0%, -1352%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Khordha */
+.contanerKhordha {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerKhordha::before {
+  opacity: 0;
+}
+.contanerKhordha.Kho {
+  opacity: 1;
+  transform: translate(0%, -1456%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Keonjhar */
+.contanerKeonjhar {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerKeonjhar::before {
+  opacity: 0;
+}
+.contanerKeonjhar.Keo {
+  opacity: 1;
+  transform: translate(0%, -1560%) scale(1);
+  pointer-events: auto;
+}
+/* for Kalahandi */
+.contanerKalahandi {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerKalahandi::before {
+  opacity: 0;
+}
+.contanerKalahandi.Kal {
+  opacity: 1;
+  transform: translate(0%, -1664%) scale(1);
+  pointer-events: auto;
+}
+/* for Kandhamal */
+.contanerKandhamal {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerKandhamal::before {
+  opacity: 0;
+}
+.contanerKandhamal.Kan {
+  opacity: 1;
+  transform: translate(0%, -1768%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Koraput */
+.contanerKoraput {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerKoraput::before {
+  opacity: 0;
+}
+.contanerKoraput.Kor {
+  opacity: 1;
+  transform: translate(0%, -1872%) scale(1);
+  pointer-events: auto;
+}
+/* for Kendrapara */
+.contanerKendrapara {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerKendrapara::before {
+  opacity: 0;
+}
+.contanerKendrapara.Ken {
+  opacity: 1;
+  transform: translate(0%, -1976%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Malkangiri */
+.contanerMalkangiri {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerMalkangiri::before {
+  opacity: 0;
+}
+.contanerMalkangiri.Mal {
+  opacity: 1;
+  transform: translate(0%, -2080%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Mayurbhanj */
+.contanerMayurbhanj {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerMayurbhanj::before {
+  opacity: 0;
+}
+.contanerMayurbhanj.May {
+  opacity: 1;
+  transform: translate(0%, -2184%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Nabarangpur */
+.contanerNabarangpur {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerNabarangpur::before {
+  opacity: 0;
+}
+.contanerNabarangpur.Nab {
+  opacity: 1;
+  transform: translate(0%, -2289%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Nuapada */
+.contanerNuapada {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerNuapada::before {
+  opacity: 0;
+}
+.contanerNuapada.Nua {
+  opacity: 1;
+  transform: translate(0%, -2393%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Nayagarh */
+.contanerNayagarh {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerNayagarh::before {
+  opacity: 0;
+}
+.contanerNayagarh.Nay {
+  opacity: 1;
+  transform: translate(0%, -2497%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Puri */
+.contanerPuri {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerPuri::before {
+  opacity: 0;
+}
+.contanerPuri.Pur {
+  opacity: 1;
+  transform: translate(0%, -2601%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Rayagada */
+.contanerRayagada {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerRayagada::before {
+  opacity: 0;
+}
+.contanerRayagada.Ray {
+  opacity: 1;
+  transform: translate(0%, -2705%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Sambalpur */
+.contanerSambalpur {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerSambalpur::before {
+  opacity: 0;
+}
+.contanerSambalpur.Sam {
+  opacity: 1;
+  transform: translate(0%, -2809%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Sonepur */
+.contanerSonepur {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerSonepur::before {
+  opacity: 0;
+}
+.contanerSonepur.Son {
+  opacity: 1;
+  transform: translate(0%, -2913%) scale(1);
+  pointer-events: auto;
+}
+
+/* for Sundargarh */
+.contanerSundargarh {
+  width: 100vw;
+  display: flex;
+  margin-top: 30px;
+  opacity: 0;
+}
+.contanerSundargarh::before {
+  opacity: 0;
+}
+.contanerSundargarh.Sun {
+  opacity: 1;
+  transform: translate(0%, -3012%) scale(1);
   pointer-events: auto;
 }
 
