@@ -7,7 +7,6 @@ const bloodrequest = require("./Model/bloodreq");
 
 const async = require("hbs/lib/async");
 
-const port = process.env.PORT || 8000;
 
 const static_path = path.join(__dirname, "../public");
 
